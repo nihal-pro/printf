@@ -13,7 +13,8 @@ int check_specifier(const char t, va_list myarg)
 	specifier_t checker_fct[] = {
 		{'c', print_single_char_c},
 		{'s', print_string_char_s},
-		{'%', print_percentage}};
+		{'%', print_percentage},
+		{'!', print_exclamation}};
 
 	while (index < sizeof(checker_fct) / sizeof(checker_fct[0]))
 	{
