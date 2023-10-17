@@ -30,3 +30,13 @@ int print_string_char_s(va_list myarg)
 		return (puts("(null)"));
 	return (write(1, str, strlen(str)));
 }
+/**
+ * print_percentage - Prints a percentage
+ * @myarg: Argument list containing the string to print
+ *
+ * Return: Number of characters printed
+ */
+int print_percentage(va_list __attribute__((__unused__)) myarg)
+{
+	return (write(1, "%", 1));
+}
