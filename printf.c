@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 		{
 			format++;	/*To check next character*/
 			ch = *format;
-			len_count += check_specifier(ch, myarg);	/*count general all string after print*/
+			len_count += check_specifier(ch, myarg);
 		}
 		else
 		{

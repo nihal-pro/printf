@@ -8,7 +8,7 @@
  */
 int check_specifier(const char t, va_list myarg)
 {
-	long unsigned int index = 0, len = 0;
+	 long unsigned int index = 0, len = 0;
 
 	specifier_t checker_fct[] = {
 		{'c', print_single_char_c},
