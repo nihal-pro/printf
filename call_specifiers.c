@@ -5,23 +5,24 @@
  * @t: Specifier character
  * @myarg: argument passes to the fucntion
  * Return: Pointer to the corresponding function or NULL
-*/
+ */
 int check_specifier(const char t, va_list myarg)
 {
-	int structsize;
+	long unsigned int index = 0, len = 0;
 
 	specifier_t checker_fct[] = {
 		{'c', print_single_char_c},
-		{'s', print_string_char_s}
-	};
-	structsize = sizeof(checker_fct) / sizeof(checker_fct[0]) - 1;
-	while (structsize >= 0)
+		{'s', print_string_char_s}};
+
+	while (index < sizeof(checker_fct) / sizeof(checker_fct[0]))
 	{
-		if (t == checker_fct[structsize].str)
+		if (t == checker_fct[index].str)
 		{
-			break;
-		structsize--;
+			/*return(function)*/
+			len += checker_fct[index].fct_op(myarg);
+			break; /*count one caracter (delete break)*/
 		}
+		index++;
 	}
-	return (checker_fct[structsize].fct_op(myarg));
+	return (len);
 }

@@ -11,8 +11,6 @@
 #define BUFFER_SIZE 1024
 
 int _printf(const char *format, ...);
-int Afterpercentage(const char *s);
-int _check_format(const char car);
 int check_specifier(const char t, va_list myarg);
 int print_single_char_c(va_list myarg);
 int print_string_char_s(va_list myarg);
