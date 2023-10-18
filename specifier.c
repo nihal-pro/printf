@@ -50,3 +50,13 @@ int print_exclamation(va_list __attribute__((__unused__)) myarg)
 {
 	return (write(1, "%!", 2));
 }
+/**
+ * print_K - Prints K
+ * @myarg: Argument list containing the string to print
+ *
+ * Return: Number of characters printed
+ */
+int print_K(va_list __attribute__((__unused__)) myarg)
+{
+        return (write(1, "%K", 2));
+}

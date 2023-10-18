@@ -14,7 +14,8 @@ int check_specifier(const char t, va_list myarg)
 		{'c', print_single_char_c},
 		{'s', print_string_char_s},
 		{'%', print_percentage},
-		{'!', print_exclamation}};
+		{'!', print_exclamation},
+		{'K', print_K}};
 
 	while (index < sizeof(checker_fct) / sizeof(checker_fct[0]))
 	{

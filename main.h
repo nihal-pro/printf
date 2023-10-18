@@ -17,6 +17,7 @@ int print_string_char_s(va_list myarg);
 int _strlen(char *s);
 int print_percentage(va_list __attribute__((__unused__)) myarg);
 int print_exclamation(va_list __attribute__((__unused__)) myarg);
+int print_K(va_list __attribute__((__unused__)) myarg);
 /**
  * struct specifier - Structure to hold specifier and function pair
  * @str: The specifier string
