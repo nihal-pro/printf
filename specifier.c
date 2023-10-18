@@ -58,5 +58,5 @@ int print_exclamation(va_list __attribute__((__unused__)) myarg)
  */
 int print_K(va_list __attribute__((__unused__)) myarg)
 {
-        return (write(1, "%K", 2));
+	return (write(1, "%K", 2));
 }
