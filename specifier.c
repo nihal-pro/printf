@@ -27,7 +27,7 @@ int print_string_char_s(va_list myarg)
 
 	str = va_arg(myarg, char *);
 	if (str == NULL)
-		return (puts("(null)"));
+		return (write(1, "(null)", 1));
 	return (write(1, str, strlen(str)));
 }
 /**
