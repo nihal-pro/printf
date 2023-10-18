@@ -10,7 +10,8 @@ int _printf(const char *format, ...)
 	va_list myarg;
 	char ch;
 
-	if (format == NULL || ((format != NULL) && (*format == '\0')))
+	if (format == NULL || (*format == '%' && *(format + 1) == '\0'))
+
 		return (-1);
 
 	va_start(myarg, format);

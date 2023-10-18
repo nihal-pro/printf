@@ -48,5 +48,5 @@ int print_percentage(va_list __attribute__((__unused__)) myarg)
  */
 int print_exclamation(va_list __attribute__((__unused__)) myarg)
 {
-	return (write(1, "%!", 1));
+	return (write(1, "%!", 2));
 }
